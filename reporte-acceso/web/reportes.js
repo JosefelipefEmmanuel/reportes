@@ -1,6 +1,6 @@
 // web/reportes.js
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/api/registros')
+    fetch('http://192.168.1.8:3000/api/registros')  // ← CAMBIADO
         .then(res => res.json())
         .then(data => {
             const tbody = document.getElementById('tabla-registro');
