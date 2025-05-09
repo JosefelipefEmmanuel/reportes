@@ -1,0 +1,64 @@
+<!-- web/reportes.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+
+        img {
+            max-height: 80px;
+        }
+    </style>
+</head>
+<body>
+<h1>Reporte de Imágenes de Registro</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Usuario ID</th>
+        <th>Empresa ID</th>
+        <th>Hora Entrada</th>
+        <th>Hora Salida</th>
+        <th>Ubicación</th>
+        <th>Resultado</th>
+        <th>Imagen</th>
+    </tr>
+    </thead>
+    <tbody id="tabla-registro">
+    <tr><td colspan="8">Cargando registros...</td></tr>
+    </tbody>
+</table>
+
+<script src="reportes.js"></script>
+</body>
+</html>
