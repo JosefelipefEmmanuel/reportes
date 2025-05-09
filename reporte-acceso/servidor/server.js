@@ -18,7 +18,7 @@ app.get('/api/registros', (req, res) => {
     conexion.query(sql, (err, results) => {
         if (err) {
             console.error('❌ Error al obtener registros:', err);
-            return res.status(500).json({ error: 'Error en el servidor' });
+            return res.status(500).json({ error: 'Error en el servidor.' });
         }
 
         const registrosConImagen = results.map(reg => ({
